@@ -11,7 +11,19 @@ set showcmd
 set number
 
 "------------------------------------
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'pbrisbin/vim-colors-off'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
+call plug#end()
+
+"------------------------------------
 " Syntax highlighting
+
+set background=dark
+colorscheme off " the color scheme is called 'off' (pbrisbin/vim-colors-off)
 
 " Use syntax highlighting
 " syntax enable
