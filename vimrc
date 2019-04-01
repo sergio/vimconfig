@@ -14,6 +14,7 @@ set number
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'itchyny/lightline.vim'
 Plug 'pbrisbin/vim-colors-off'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
@@ -31,6 +32,10 @@ colorscheme off " the color scheme is called 'off' (pbrisbin/vim-colors-off)
 " Disable syntax highlightning when opening large files
 " autocmd BufWinEnter * if line2byte(line("$") + 1) > 1000000 | syntax clear | endif
 
+"------------------------------------
+" Statusline
+
+set laststatus=2
 
 "------------------------------------
 " Search
