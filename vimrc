@@ -14,9 +14,21 @@ set number
 
 call plug#begin('~/.vim/plugged')
 
+" Essential plugins
+"
 Plug 'itchyny/lightline.vim'
 Plug 'pbrisbin/vim-colors-off'
+
+Plug '/usr/local/bin/fzf'
+Plug 'junegunn/fzf.vim'
+
+" Languages
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
+" Niceties
+
+" Focused writing
+Plug 'junegunn/limelight.vim'
 
 call plug#end()
 
@@ -69,6 +81,8 @@ set wildmenu
 " redrawing during these scenarios, leading to faster macros.
 set lazyredraw 
 
+" Hide swap files
+set directory^=$HOME/.vim/tmp//
 "---------------------------------------------
 " Thanks
 
