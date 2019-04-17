@@ -45,6 +45,16 @@ colorscheme off " the color scheme is called 'off' (pbrisbin/vim-colors-off)
 " autocmd BufWinEnter * if line2byte(line("$") + 1) > 1000000 | syntax clear | endif
 
 "------------------------------------
+" Current position highlight
+
+" Setting all these to NONE only highlights current line number.
+highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
+" Clearing CursorLineNR removes foreground and background color changes
+" to the line number, making it only bold and white.
+highlight clear CursorLineNR
+set cursorline
+
+"------------------------------------
 " Statusline
 
 set laststatus=2
