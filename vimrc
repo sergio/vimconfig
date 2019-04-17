@@ -55,6 +55,10 @@ highlight clear CursorLineNR
 set cursorline
 
 "------------------------------------
+" Buffers
+set hidden
+
+"------------------------------------
 " Statusline
 
 set laststatus=2
